@@ -14,13 +14,13 @@ Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gr
 
  1. Acesse o link: https://github.com/opencartbrasil/mapa-vendas-brasil/releases.
  2. Localize a versão mais atual e compatível com sua versão do OpenCart, e baixe o arquivo "mapa-vendas-brasil.ocmod.zip".
- 3. Na administração da loja acesse o menu Extensões->Instalador (Extensions->Installer).
+ 3. Na administração da loja acesse o menu Extensões→Instalador (Extensions→Installer).
  4. Na página do instalador, clique no botão Upload e selecione o arquivo 'mapa-vendas-brasil.ocmod.zip' (que você baixou deste repositório), e aguarde a conclusão da instalação automática.
- 5. Após a instalação, acesse o menu Extensões->Modificações (Extensions->Modifications) e clique no botão Atualizar (Refresh), para que a modificação instalada seja incrementada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
+ 5. Após a instalação, acesse o menu Extensões→Modificações (Extensions→Modifications) e clique no botão Atualizar (Refresh), para que a modificação instalada seja incrementada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
 
 ### Desinstalação
 
-Para desinstalar a modificação, na administração da loja, acesse o menu Extensões->Modificações (Extensions->Modifications), selecione a modificação com o nome 'Mapa de vendas no Brasil', depois clique no botão Excluir (Delete), e no botão Atualizar (Refresh).
+Para desinstalar a modificação, na administração da loja, acesse o menu Extensões→Modificações (Extensions→Modifications), selecione a modificação com o nome 'Mapa de vendas no Brasil', depois clique no botão Excluir (Delete), e no botão Atualizar (Refresh).
 
 ### Atualização
 
