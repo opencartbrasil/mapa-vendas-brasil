@@ -10,9 +10,9 @@
 <script type="text/javascript" src="view/javascript/jquery/jqvmap/jquery.vmap.min.js"></script> 
 <script type="text/javascript" src="view/javascript/jquery/jqvmap/maps/jquery.vmap.brazil.min.js" charset="utf-8"></script>
 <script type="text/javascript"><!--
-  $(document).ready(function() {
+  $(document).ready(function(){
     $.ajax({
-      url: 'index.php?route=dashboard/map_brazil/map&token=<?php echo $token; ?>',
+      url: 'index.php?route=extension/dashboard/map_brazil/map_brazil&token=<?php echo $token; ?>',
       dataType: 'json',
       success: function(json){
         data = [];
