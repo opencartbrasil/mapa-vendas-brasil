@@ -10,38 +10,38 @@
 <script type="text/javascript" src="view/javascript/jquery/jqvmap/jquery.vmap.min.js"></script> 
 <script type="text/javascript" src="view/javascript/jquery/jqvmap/maps/jquery.vmap.brazil.min.js" charset="utf-8"></script>
 <script type="text/javascript"><!--
-$(document).ready(function() {
+  $(document).ready(function() {
     $.ajax({
-        url: 'index.php?route=dashboard/map_brazil/map&token=<?php echo $token; ?>',
-        dataType: 'json',
-        success: function(json) {
-            data = [];
+      url: 'index.php?route=dashboard/map_brazil/map&token=<?php echo $token; ?>',
+      dataType: 'json',
+      success: function(json){
+        data = [];
 
-            for (i in json) {
-                data[i] = json[i]['total'];
-            }
-
-            $('#vmap').vectorMap({
-                map: 'brazil_br',
-                backgroundColor: '#FFFFFF',
-                borderColor: '#FFFFFF',
-                color: '#9FD5F1',
-                hoverOpacity: 0.7,
-                selectedColor: '#666666',
-                enableZoom: true,
-                showTooltip: true,
-                values: data,
-                normalizeFunction: 'polynomial',
-                onLabelShow: function(event, label, code) {
-                    if (json[code]) {
-                        label.html('<strong>' + label.text() + '</strong><br />' + '<?php echo $text_order; ?> ' + json[code]['total'] + '<br />' + '<?php echo $text_sale; ?> ' + json[code]['amount']);
-                    }
-                }
-            });
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        for (i in json) {
+          data[i] = json[i]['total'];
         }
+
+        $('#vmap').vectorMap({
+          map: 'brazil_br',
+          backgroundColor: '#FFFFFF',
+          borderColor: '#FFFFFF',
+          color: '#9FD5F1',
+          hoverOpacity: 0.7,
+          selectedColor: '#666666',
+          enableZoom: true,
+          showTooltip: true,
+          values: data,
+          normalizeFunction: 'polynomial',
+          onLabelShow: function(event, label, code) {
+            if (json[code]) {
+              label.html('<strong>' + label.text() + '</strong><br />' + '<?php echo $text_order; ?> ' + json[code]['total'] + '<br />' + '<?php echo $text_sale; ?> ' + json[code]['amount']);
+            }
+          }
+        });
+      },
+      error: function(xhr, ajaxOptions, thrownError) {
+        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      }
     });
 });
 //--></script>
