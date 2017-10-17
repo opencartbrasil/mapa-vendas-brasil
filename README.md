@@ -2,9 +2,13 @@
 
 ### Apresentação
 
-Esta modificação foi desenvolvida no formato OCMOD, e modifica o mapa do Mundo pelo mapa do Brasil com os pedidos divididos por estado.
+Exibe no painel de controle do OpenCart o mapa de vendas no Brasil com os pedidos divididos pelos estados brasileiros.
 
-Uma das grandes vantagens desta modificação é permitir que lojas que não vendem para fora do Brasil, possam visualizar apenas o mapa do Brasil com a divisão de pedidos por estados brasileiros.
+#### Importante:
+
+Caso esteja utilizando uma versão do OpenCart inferior a 2.3, você estará instalando uma modificação.
+
+Se estiver utilizando a versão 2.3 ou 3.0, você estará instalando uma extensão.
 
 Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gratuito, clique no botão abaixo:
 
@@ -14,17 +18,20 @@ Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gr
 
  1. Acesse o link: https://github.com/opencartbrasil/mapa-vendas-brasil/releases.
  2. Localize a versão mais atual e compatível com sua versão do OpenCart, e baixe o arquivo "mapa-vendas-brasil.ocmod.zip".
- 3. Na administração da loja acesse o menu Extensões→Instalador (Extensions→Installer).
- 4. Na página do instalador, clique no botão Upload e selecione o arquivo 'mapa-vendas-brasil.ocmod.zip' (que você baixou deste repositório), e aguarde a conclusão da instalação automática.
- 5. Após a instalação, acesse o menu Extensões→Modificações (Extensions→Modifications) e clique no botão Atualizar (Refresh), para que a modificação instalada seja incrementada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
+ 3. Na administração da loja acesse o menu "**Extensões→Instalador**" (Extensions→Installer).
+ 4. Na página do instalador, clique no botão "**Upload**" e selecione o arquivo '**mapa-vendas-brasil.ocmod.zip**' (que você baixou deste repositório), e aguarde a conclusão da instalação automática.
+ 5. Após a instalação, caso esteja utilizando uma versão do OpenCart inferior a 2.3, acesse o menu "**Extensões→Modificações**" (Extensions→Modifications) e clique no botão "**Atualizar**" (Refresh), para que a modificação instalada e incrementada na loja, lembrando que não é o botão Atualizar do seu navegador, e sim o botão Atualizar na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
+ 6. Se estiver utilizando a versão 2.3 ou 3.0 do OpenCart, acesse o menu "**Extensões→Extensões**", filtre por "**Painéis**", localize a extensão "**Mapa de vendas no Brasil**", clique no botão "**Instalar**", depois no botão "**Editar**", no campo "**Largura**" selecione **6**, no campo "**Situação**" selecione **Habilitado**, no campo "**Posição**" preencha com **5**, e clique no botão "**Salvar**", depois localize a extensão "**Mapa geográfico de vendas**", clique no botão "**Editar**", no campo "**Situação**" selecione **Desabilitado**, e clique no botão "**Salvar**".
 
 ### Desinstalação
 
-Para desinstalar a modificação, na administração da loja, acesse o menu Extensões→Modificações (Extensions→Modifications), selecione a modificação com o nome 'Mapa de vendas no Brasil', depois clique no botão Excluir (Delete), e no botão Atualizar (Refresh).
+Caso esteja utilizando uma versão do OpenCart inferior a 2.3, na administração da loja, acesse o menu **Extensões→Modificações** (Extensions→Modifications), selecione a modificação com o nome '**Mapa de vendas no Brasil**', depois clique no botão "**Excluir**" (Delete), e no botão "**Atualizar**" (Refresh).
+
+Se estiver utilizando a versão 2.3 ou 3.0, acesse o menu "**Extensões→Extensões**", filtre por "**Painéis**", localize a extensão "**Mapa de vendas no Brasil**", clique no botão "**Excluir**" (Delete), depois localize a extensão "**Mapa geográfico de vendas**", clique no botão "**Editar**", no campo "**Situação**" selecione **Habilitado**, e clique no botão "**Salvar**".
 
 ### Atualização
 
-Acesse a administração da loja e execute o procedimento de Desinstalação, depois execute o procedimento de Instalação.
+Acesse a administração da loja e execute o procedimento de Desinstalação, depois execute o procedimento de Instalação, conforme sua versão do OpenCart.
 
 ### Dúvidas
 
