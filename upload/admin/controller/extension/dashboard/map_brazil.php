@@ -14,21 +14,8 @@ class ControllerExtensionDashboardMapBrazil extends Controller {
 
             $this->session->data['success'] = $this->language->get('text_success');
 
-            $this->response->redirect($this->url->link('extension/extension', 'token=' . $this->session->data['token'] . '&type=dashboard', true));
+            $this->response->redirect($this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=dashboard', true));
         }
-
-        $data['heading_title'] = $this->language->get('heading_title');
-        
-        $data['text_edit'] = $this->language->get('text_edit');
-        $data['text_enabled'] = $this->language->get('text_enabled');
-        $data['text_disabled'] = $this->language->get('text_disabled');
-
-        $data['entry_width'] = $this->language->get('entry_width');
-        $data['entry_status'] = $this->language->get('entry_status');
-        $data['entry_sort_order'] = $this->language->get('entry_sort_order');
-
-        $data['button_save'] = $this->language->get('button_save');
-        $data['button_cancel'] = $this->language->get('button_cancel');
 
         if (isset($this->error['warning'])) {
             $data['error_warning'] = $this->error['warning'];
@@ -40,22 +27,22 @@ class ControllerExtensionDashboardMapBrazil extends Controller {
 
         $data['breadcrumbs'][] = array(
             'text' => $this->language->get('text_home'),
-            'href' => $this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true)
+            'href' => $this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token'], true)
         );
 
         $data['breadcrumbs'][] = array(
             'text' => $this->language->get('text_extension'),
-            'href' => $this->url->link('extension/extension', 'token=' . $this->session->data['token'] . '&type=dashboard', true)
+            'href' => $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=dashboard', true)
         );
 
         $data['breadcrumbs'][] = array(
             'text' => $this->language->get('heading_title'),
-            'href' => $this->url->link('extension/dashboard/map_brazil', 'token=' . $this->session->data['token'], true)
+            'href' => $this->url->link('extension/dashboard/map_brazil', 'user_token=' . $this->session->data['user_token'], true)
         );
 
-        $data['action'] = $this->url->link('extension/dashboard/map_brazil', 'token=' . $this->session->data['token'], true);
+        $data['action'] = $this->url->link('extension/dashboard/map_brazil', 'user_token=' . $this->session->data['user_token'], true);
 
-        $data['cancel'] = $this->url->link('extension/extension', 'token=' . $this->session->data['token'] . '&type=dashboard', true);
+        $data['cancel'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=dashboard', true);
 
         if (isset($this->request->post['dashboard_map_brazil_width'])) {
             $data['dashboard_map_brazil_width'] = $this->request->post['dashboard_map_brazil_width'];
@@ -95,16 +82,11 @@ class ControllerExtensionDashboardMapBrazil extends Controller {
 
         return !$this->error;
     }
-        
+
     public function dashboard() {
         $this->load->language('extension/dashboard/map_brazil');
 
-        $data['heading_title'] = $this->language->get('heading_title');
-
-        $data['text_order'] = $this->language->get('text_order');
-        $data['text_sale'] = $this->language->get('text_sale');
-
-        $data['token'] = $this->session->data['token'];
+        $data['user_token'] = $this->session->data['user_token'];
         
         return $this->load->view('extension/dashboard/map_brazil_info', $data);
     }
