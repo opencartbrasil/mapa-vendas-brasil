@@ -10,14 +10,10 @@ Caso esteja utilizando uma versão do OpenCart inferior a 2.3, você estará ins
 
 Se estiver utilizando a versão 2.3 ou 3.0, você estará instalando uma extensão.
 
-Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gratuito, clique no botão abaixo:
-
-[![alt tag](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7G9TR9PXS6G5J)
-
 ### Instalação
 
- 1. Acesse o link: https://github.com/opencartbrasil/mapa-vendas-brasil/releases.
- 2. Localize a versão mais atual e compatível com sua versão do OpenCart, e baixe o arquivo "mapa-vendas-brasil.ocmod.zip".
+ 1. Acesse o link: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=22375.
+ 2. Localize a versão mais atual e compatível com sua versão do OpenCart e faça o download.
  3. Na administração da loja acesse o menu "**Extensões→Instalador**" (Extensions→Installer).
  4. Na página do instalador, clique no botão "**Upload**" e selecione o arquivo '**mapa-vendas-brasil.ocmod.zip**' (que você baixou deste repositório), e aguarde a conclusão da instalação automática.
  5. Após a instalação, caso esteja utilizando uma versão do OpenCart inferior a 2.3, acesse o menu "**Extensões→Modificações**" (Extensions→Modifications) e clique no botão "**Atualizar**" (Refresh), para que a modificação instalada e incrementada na loja, lembrando que não é o botão Atualizar do seu navegador, e sim o botão Atualizar na cor azul ao lado do botão laranja e vermelho na tela do próprio OpenCart.
